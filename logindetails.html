@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up Form</title>
+</head>
+<body>
+
+<form action="/submit-form" method="post" enctype="multipart/form-data">
+    <h2>Sign up</h2>
+    
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Full name" required><br>
+    <br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Email address" required><br>
+    <br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="Password" required minlength="8"><br>
+    <br>
+    <label for="confirm_password">Confirm Password:</label><br>
+    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required minlength="8"><br>
+    <br>
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required><br>
+    <br>
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br>
+    <br>
+    <label for="photo">Insert your photo:</label><br>
+    <input type="file" id="photo" name="photo" accept="image/*"><br>
+    <br>
+    <label for="resume">Insert your resume:</label><br>
+    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"><br>
+    <br>
+    <label for="security">Security Question:</label><br>
+    <label id="security" name="security">
+        <textarea id="textarea" name="security" rows="4" cols="50">
+        </textarea>
+    <br>
+    <label>
+        <input type="checkbox" name="terms" required>
+        I agree to the terms and conditions<br>
+    </label>
+    
+    <button type="submit">Register</button><br>
+</form>
+
+</body>
+</html>
